@@ -1,0 +1,57 @@
+{
+  "name": "codesnap-cli",
+  "version": "1.0.0",
+  "description": "🚀 智能代码片段管理工具 - 终端原生的开发者效率利器",
+  "main": "dist/index.js",
+  "bin": {
+    "codesnap": "dist/index.js",
+    "cs": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "code-snippets",
+    "developer-tools",
+    "productivity",
+    "snippet-manager",
+    "terminal",
+    "command-line"
+  ],
+  "author": "CodeSnap Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.7.0",
+    "chalk": "^4.1.2",
+    "clipboardy": "^2.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "fuse.js": "^7.0.0",
+    "highlight.js": "^11.9.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^8.2.10",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.12.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
